@@ -11,6 +11,7 @@ body {
     gap: 10px;
     isolation: isolate;
 */
+    padding: 0;
     position: relative;
     margin: 0 auto 50px auto;
     max-width: 1360px;
@@ -35,6 +36,7 @@ header {
     display: flex;
     margin: 0 auto 0 auto;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+    border-radius: 0 0 15px 15px;
 }
 
 .Menu h1 {
@@ -121,7 +123,7 @@ header {
     /* border: 1px solid red;*/
     width: 495px;
     height: 157px;
-    top: 550px;
+    top: 500px;
     left: 810px;
     position: absolute;
     transition: 0.5s;
@@ -175,72 +177,137 @@ button:active {
 
 .portfolio {
     position: relative;
-    width: 1360px;
-    height: 1359px;
     left: 0;
     top: 40px;
-
-    /* Inside auto layout */
-
-    /*flex: none;
-    order: 3;
-    flex-grow: 0;
-    z-index: 3;*/
+    width: auto;
+    min-height: 1359px;
 }
 
 .ph_group {
-    position: absolute;
-    width: 1160px;
-    height: 1225px;
-    left: 100px;
-    top: 67px;
-    border: 1px solid red;
+    justify-content: center;
+    text-align: center;
+
+    color: #ffffff;
+
+    display: flex;
+    width: auto;
+    max-width: 1160px;
+    min-height: 1207px;
+    border: 3px solid purple;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 40px;
+    font-family: 'Comfortaa';
+    /* font-style: normal;*/
 }
+
+.name {
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 10px;
+}
+
+.but {
+    font-weight: 200;
+    border: 1px solid red;
+    text-decoration: none;
+    color: white;
+    width: 70%;
+}
+.but::after {
+    content: ' --->';
+}
+
 .photo1 {
-    position: absolute;
+    position: static;
     width: 320px;
     height: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 auto;
+}
+.photo1 > a > img {
+    border-radius: 25px;
 }
 
 .photo2 {
-    position: absolute;
+    position: static;
     width: 320px;
     height: 580px;
     left: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 auto;
+}
+.photo2 > a > img {
+    border-radius: 25px;
 }
 
 .photo3 {
-    position: absolute;
+    position: static;
     width: 320px;
     height: 580px;
     left: 840px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 auto;
+}
+.photo3 > a > img {
+    border-radius: 25px;
 }
 
 .photo4 {
-    position: absolute;
+    position: static;
     width: 320px;
     height: 580px;
-
     top: 645px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 auto;
+}
+.photo4 > a > img {
+    border-radius: 25px;
 }
 
 .photo5 {
-    position: absolute;
+    position: static;
     width: 320px;
     height: 580px;
     left: 420px;
     top: 645px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 auto;
+}
+.photo5 > a > img {
+    border-radius: 25px;
 }
 
 .photo6 {
-    position: absolute;
+    position: static;
     width: 320px;
     height: 580px;
     left: 840px;
     top: 645px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 auto;
+}
+.photo6 > a > img {
+    border-radius: 25px;
 }
 
 @media (max-width: 1360px) and (min-width: 900px) {
+    /*  html {
+        overflow-x: hidden;
+    }*/
     #Oph {
         margin: 0 15%;
     }
@@ -254,6 +321,14 @@ button:active {
     }
     .order {
         left: calc(55% + 60px);
+    }
+}
+
+@media (max-width: 1100px) and (min-width: 900px) {
+    .order {
+        transform: scale(0.85);
+        left: calc(50% + 60px);
+        top: 450px;
     }
 }
 
@@ -282,13 +357,5 @@ button:active {
     .order {
         top: 620px;
         left: calc(40% - 125px);
-    }
-}
-
-@media (max-width: 1100px) and (min-width: 900px) {
-    .order {
-        transform: scale(0.85);
-        left: calc(50% + 60px);
-        top: 450px;
     }
 }
