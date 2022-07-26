@@ -1,0 +1,294 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 50px 50px;
+    gap: 10px;
+    isolation: isolate;
+*/
+    position: relative;
+    margin: 0 auto 50px auto;
+    max-width: 1360px;
+    max-height: 3256px;
+    background: linear-gradient(180deg, #040f10 0%, #214024 39%, #68622d 100%);
+    box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.25);
+}
+
+header {
+    height: 800px;
+    width: auto;
+    /* padding-top: 0;*/
+}
+
+.mainPhoto {
+    width: auto;
+    height: 800px;
+    /*  top: -200px;*/
+    z-index: -1;
+    /*  margin: 0 auto;
+    /* align-items: center;*/
+    display: flex;
+    margin: 0 auto 0 auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+}
+
+.Menu h1 {
+    font-family: 'Corinthia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 199.52%;
+    color: #33431e;
+}
+
+#Oph {
+    /*border: 1px solid red;*/
+    /* width: 300px;*/
+    height: 65px;
+    display: flex;
+    align-items: center;
+    /*justify-content: start;*/
+    position: absolute;
+    top: 50px;
+    margin: 0 13rem;
+    transition: 0.5s;
+}
+
+.Menu {
+    width: 100%;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 199.52%;
+}
+
+.Menu > ul {
+    list-style-type: none;
+    /*  border: 1px solid red;*/
+    width: 90%;
+    height: 65px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    top: 45px;
+    left: -20px;
+    margin-top: 0;
+    color: #33431e;
+    transition: 0.5s;
+    /* flex-direction: row;
+    padding: 0px 50px;
+    
+    isolation: isolate;
+
+    
+    left: calc(50% - 1366.85px / 2 + 1.01px);
+    /* 
+
+    filter: drop-shadow(0px 10px 8px rgba(0, 0, 0, 0.25));
+    border-radius: 0px;*/
+}
+
+.m_menu a {
+    text-decoration: none;
+    color: #33431e;
+    transition: 0.5s;
+    text-shadow: 0px 0px 16px #ffffff;
+    /*transition: border 1s;*/
+}
+
+.m_menu a:hover {
+    font-size: 20px;
+    padding-bottom: 0.3em;
+    border-bottom: 1.5px solid #33431e;
+    border-radius: 2px;
+}
+.m_menu a:active {
+    font-size: 17px;
+}
+/*.Menu > ul > li > a:hover {
+    text-decoration: underline;
+    transition: 2.5s;
+}*/
+.order {
+    /* border: 1px solid red;*/
+    width: 495px;
+    height: 157px;
+    top: 550px;
+    left: 810px;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.order button {
+    position: absolute;
+    width: 386.5px;
+    height: 70px;
+    /*left: 15px;
+    top: 0;*/
+    left: calc(50% - 386.5px / 2 - 39.49px);
+    top: calc(50% - 70px / 2 - 43.5px);
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 28px;
+    /* identical to box height */
+    transition: transform 0.25s;
+    text-align: center;
+
+    color: #ffffff;
+    background: rgba(156, 156, 156, 0.4);
+    border-radius: 35px;
+    border: 0;
+}
+
+.order p {
+    position: absolute;
+    width: 337px;
+    height: 50px;
+    left: calc(50% - 337px / 2 - 35.24px);
+    top: calc(50% - 80px / 2 + 29.5px);
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #ffffff;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+button:active {
+    transform: scale(1);
+}
+
+.portfolio {
+    position: relative;
+    width: 1360px;
+    height: 1359px;
+    left: 0;
+    top: 40px;
+
+    /* Inside auto layout */
+
+    /*flex: none;
+    order: 3;
+    flex-grow: 0;
+    z-index: 3;*/
+}
+
+.ph_group {
+    position: absolute;
+    width: 1160px;
+    height: 1225px;
+    left: 100px;
+    top: 67px;
+    border: 1px solid red;
+}
+.photo1 {
+    position: absolute;
+    width: 320px;
+    height: 580px;
+}
+
+.photo2 {
+    position: absolute;
+    width: 320px;
+    height: 580px;
+    left: 420px;
+}
+
+.photo3 {
+    position: absolute;
+    width: 320px;
+    height: 580px;
+    left: 840px;
+}
+
+.photo4 {
+    position: absolute;
+    width: 320px;
+    height: 580px;
+
+    top: 645px;
+}
+
+.photo5 {
+    position: absolute;
+    width: 320px;
+    height: 580px;
+    left: 420px;
+    top: 645px;
+}
+
+.photo6 {
+    position: absolute;
+    width: 320px;
+    height: 580px;
+    left: 840px;
+    top: 645px;
+}
+
+@media (max-width: 1360px) and (min-width: 900px) {
+    #Oph {
+        margin: 0 15%;
+    }
+
+    .Menu > ul {
+        width: 90%;
+
+        gap: 50px;
+        transition: 0.5s;
+        /* margin: 0 -50px;*/
+    }
+    .order {
+        left: calc(55% + 60px);
+    }
+}
+
+@media (max-width: 900px) {
+    .mainPhoto {
+        height: auto;
+        width: 900px;
+    }
+    #Oph {
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+        transition: 0.5s;
+    }
+
+    .Menu > ul {
+        width: 90%;
+        min-width: 300px;
+        top: 130px;
+        margin: 0 0;
+        justify-content: center;
+    }
+    .Menu {
+        width: 100%;
+    }
+    .order {
+        top: 620px;
+        left: calc(40% - 125px);
+    }
+}
+
+@media (max-width: 1100px) and (min-width: 900px) {
+    .order {
+        transform: scale(0.85);
+        left: calc(50% + 60px);
+        top: 450px;
+    }
+}
