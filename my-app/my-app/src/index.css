@@ -1,68 +1,34 @@
 html {
-    overflow-x: hidden;
+    /* overflow-x: hidden;*/
 }
 
 body {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0px 50px 50px;
-    gap: 10px;
-    isolation: isolate;
-*/
     padding: 0;
     position: relative;
     margin: 0 auto 50px auto;
     max-width: 1360px;
-    max-height: 3256px;
+    /*max-height: 3256px;*/
     background: linear-gradient(180deg, #040f10 0%, #214024 39%, #68622d 100%);
     box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.25);
 }
 
 header {
-    height: 800px;
+    background: no-repeat center url(img/main_photos/1_mainPhoto.jpg);
+    background-size: 1200px;
+    height: 100vh;
+    max-height: 800px;
     width: auto;
-    /* padding-top: 0;*/
-}
-
-.mainPhoto {
-    width: auto;
-    height: 800px;
-    /*  top: -200px;*/
-    z-index: -1;
-    /*  margin: 0 auto;
-    /* align-items: center;*/
-    display: flex;
-    margin: 0 auto 0 auto;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
-    border-radius: 0 0 15px 15px;
-}
-
-.Menu h1 {
-    font-family: 'Corinthia';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 80px;
-    line-height: 199.52%;
-    color: #33431e;
-}
-
-#Oph {
-    /*border: 1px solid red;*/
-    /* width: 300px;*/
-    height: 65px;
-    display: flex;
-    align-items: center;
-    /*justify-content: start;*/
-    position: absolute;
-    top: 50px;
-    margin: 0 13rem;
-    transition: 0.5s;
 }
 
 .Menu {
-    width: 100%;
+    display: flex;
+    position: relative;
+    height: 65px;
+    top: 10vh;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+
     font-family: 'Comfortaa';
     font-style: normal;
     font-weight: 500;
@@ -70,40 +36,43 @@ header {
     line-height: 199.52%;
 }
 
-.Menu > ul {
-    list-style-type: none;
-    /*  border: 1px solid red;*/
-    width: 90%;
-    height: 65px;
-    display: flex;
-    gap: 50px;
-    align-items: center;
-    justify-content: flex-end;
-    position: absolute;
-    top: 45px;
-    left: -20px;
-    margin-top: 0;
+.Menu h1 {
+    font-family: 'Corinthia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5em;
     color: #33431e;
-    transition: 0.5s;
-    /* flex-direction: row;
-    padding: 0px 50px;
-    
-    isolation: isolate;
 
-    
-    left: calc(50% - 1366.85px / 2 + 1.01px);
-    /* 
+    margin-top: 2%;
+    flex-basis: 50%;
+    text-align: left;
+    padding-left: 13%;
+    transition: 0.2s;
+}
 
-    filter: drop-shadow(0px 10px 8px rgba(0, 0, 0, 0.25));
-    border-radius: 0px;*/
+.Menu > ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-right: 10%;
+    height: 65px;
+    gap: 50px;
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 0;
+
+    color: #33431e;
+    transition: 0.2s;
+    white-space: nowrap;
 }
 
 .m_menu a {
     text-decoration: none;
     color: #33431e;
-    transition: 0.5s;
+
     text-shadow: 0px 0px 16px #ffffff;
-    /*transition: border 1s;*/
+    transition: 0.2s;
 }
 
 .m_menu a:hover {
@@ -115,26 +84,20 @@ header {
 .m_menu a:active {
     font-size: 17px;
 }
-/*.Menu > ul > li > a:hover {
-    text-decoration: underline;
-    transition: 2.5s;
-}*/
+
 .order {
-    /* border: 1px solid red;*/
     width: 495px;
     height: 157px;
-    top: 500px;
-    left: 810px;
-    position: absolute;
-    transition: 0.5s;
+    /*top: 500px;
+    left: 810px;*/
+    position: relative;
+    transition: 0.25s;
 }
 
 .order button {
     position: absolute;
     width: 386.5px;
     height: 70px;
-    /*left: 15px;
-    top: 0;*/
     left: calc(50% - 386.5px / 2 - 39.49px);
     top: calc(50% - 70px / 2 - 43.5px);
     font-family: 'Comfortaa';
@@ -142,7 +105,7 @@ header {
     font-weight: 300;
     font-size: 25px;
     line-height: 28px;
-    /* identical to box height */
+
     transition: transform 0.25s;
     text-align: center;
 
@@ -193,7 +156,7 @@ button:active {
     width: auto;
     max-width: 1160px;
     min-height: 1207px;
-    border: 3px solid purple;
+    /* border: 3px solid purple;*/
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -303,11 +266,9 @@ button:active {
 .photo6 > a > img {
     border-radius: 25px;
 }
-
+/*
 @media (max-width: 1360px) and (min-width: 900px) {
-    /*  html {
-        overflow-x: hidden;
-    }*/
+
     #Oph {
         margin: 0 15%;
     }
@@ -317,7 +278,7 @@ button:active {
 
         gap: 50px;
         transition: 0.5s;
-        /* margin: 0 -50px;*/
+        
     }
     .order {
         left: calc(55% + 60px);
@@ -359,3 +320,4 @@ button:active {
         left: calc(40% - 125px);
     }
 }
+*/
