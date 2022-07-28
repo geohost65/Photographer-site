@@ -1,15 +1,14 @@
 html {
-    /* overflow-x: hidden;*/
+    overflow-x: hidden;
+    background: linear-gradient(180deg, #040f10 0%, #214024 60%, #68622d 100%);
+    /* box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.25); */
 }
-
 body {
     padding: 0;
     position: relative;
     margin: 0 auto 50px auto;
     max-width: 1360px;
     /*max-height: 3256px;*/
-    background: linear-gradient(180deg, #040f10 0%, #214024 39%, #68622d 100%);
-    box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.25);
 }
 
 header {
@@ -86,11 +85,14 @@ header {
 }
 
 .order {
-    width: 495px;
+    transform: scale(0.9);
+    width: 450px;
     height: 157px;
-    /*top: 500px;
-    left: 810px;*/
     position: relative;
+    margin-top: 50vh;
+    margin-right: calc(20% - 200px);
+    float: right;
+
     transition: 0.25s;
 }
 
@@ -100,6 +102,7 @@ header {
     height: 70px;
     left: calc(50% - 386.5px / 2 - 39.49px);
     top: calc(50% - 70px / 2 - 43.5px);
+
     font-family: 'Comfortaa';
     font-style: normal;
     font-weight: 300;
@@ -121,13 +124,13 @@ header {
     height: 50px;
     left: calc(50% - 337px / 2 - 35.24px);
     top: calc(50% - 80px / 2 + 29.5px);
+
     font-family: 'Comfortaa';
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
-
     color: #ffffff;
 }
 
@@ -140,29 +143,25 @@ button:active {
 
 .portfolio {
     position: relative;
-    left: 0;
     top: 40px;
     width: auto;
-    min-height: 1359px;
+    min-height: 1207px;
+    padding: 40px 0;
 }
 
 .ph_group {
     justify-content: center;
-    text-align: center;
-
-    color: #ffffff;
-
     display: flex;
     width: auto;
     max-width: 1160px;
     min-height: 1207px;
-    /* border: 3px solid purple;*/
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto;
     gap: 40px;
     font-family: 'Comfortaa';
-    /* font-style: normal;*/
+    text-align: center;
+    color: #ffffff;
 }
 
 .name {
@@ -172,11 +171,10 @@ button:active {
 }
 
 .but {
-    font-weight: 200;
-    border: 1px solid red;
     text-decoration: none;
-    color: white;
     width: 70%;
+    font-weight: 200;
+    color: white;
 }
 .but::after {
     content: ' --->';
@@ -266,25 +264,48 @@ button:active {
 .photo6 > a > img {
     border-radius: 25px;
 }
-/*
-@media (max-width: 1360px) and (min-width: 900px) {
+.price {
+    min-height: 1000px;
+}
 
-    #Oph {
-        margin: 0 15%;
+/* footer {
+} */
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.links a img {
+    width: 36px;
+}
+
+@media (max-width: 800px) {
+    /* body {
+        min-height: 700px;
+    } */
+    .Menu {
+        margin-top: -15px;
+        height: 150px;
+        top: 10vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Menu h1 {
+        margin-bottom: -50px;
+        margin-top: 0;
+        /* border: 1px solid red; */
+        padding-left: 0;
     }
 
     .Menu > ul {
-        width: 90%;
-
-        gap: 50px;
-        transition: 0.5s;
-        
-    }
-    .order {
-        left: calc(55% + 60px);
+        /* border: 1px solid red; */
+        padding-right: 8%;
     }
 }
-
+/*
 @media (max-width: 1100px) and (min-width: 900px) {
     .order {
         transform: scale(0.85);
